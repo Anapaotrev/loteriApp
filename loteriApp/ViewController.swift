@@ -2,8 +2,9 @@
 //  ViewController.swift
 //  loteriApp
 //
-//  Created by Ana Paola Treviño on 3/20/19.
-//  Copyright © 2019 Ana Paola Treviño. All rights reserved.
+//  Ana Paola Treviño
+//  Luis Gerardo Bravo
+//  Eduardo Aguilar
 //
 
 import UIKit
