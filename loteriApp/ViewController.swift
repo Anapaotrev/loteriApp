@@ -11,36 +11,31 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var cartasLoteria = [Loteria]()
+    var loteriaCards : NSArray!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        cartasLoteria.removeAll()
-
-        guard let cartasTmp = retrieveCartas() else { return }
-
-        cartasLoteria = cartasTmp
         
-        for card in cartasLoteria {
-            print(card.card)
-            print("\n")
-        }
+        let path = Bundle.main.path(forResource:
+            "LoteriaCards", ofType: "plist")
+        
+        loteriaCards = NSArray(contentsOfFile: path!)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func retrieveCartas() -> [Loteria]? {
-        do {
-            let data = try Data.init(contentsOf: Loteria.archiveURL)
-            let cartasTmp = try PropertyListDecoder().decode([Loteria].self, from: data)
-            return cartasTmp
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "dar" {
+            let giveView = segue.destination as! GiveViewController
+            giveView.cards = loteriaCards
         }
-        catch {
-            return []
+        else if segue.identifier == "play" {
+            let playView = segue.destination as! PlayViewController
+            playView.cardNames = loteriaCards
         }
     }
-    
 }
 
