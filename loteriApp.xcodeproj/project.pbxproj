@@ -23,7 +23,7 @@
 		34BD08362244057B007AB14B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		4AA3594022486101003A2944 /* Loteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loteria.swift; sourceTree = "<group>"; };
 		4AA3594222486338003A2944 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
-		4AA3594422488374003A2944 /* western.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = western.TTF; path = ../../../../../../../.Trash/western.TTF; sourceTree = "<group>"; };
+		4AA3594422488374003A2944 /* western.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = western.TTF; path = ../../../../../Downloads/western.TTF; sourceTree = "<group>"; };
 		4AA3B8382243066D0077E1B6 /* loteriApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loteriApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA3B83B2243066D0077E1B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AA3B83D2243066D0077E1B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
