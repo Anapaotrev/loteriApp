@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>El Gallo</string>
+		<key>image</key>
+		<string>gallo</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Diablito</string>
+		<key>image</key>
+		<string>diablito</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Dama</string>
+		<key>image</key>
+		<string>dama</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Catrin</string>
+		<key>image</key>
+		<string>catrin</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Paraguas</string>
+		<key>image</key>
+		<string>paraguas</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Sirena</string>
+		<key>image</key>
+		<string>sirena</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Escalera</string>
+		<key>image</key>
+		<string>escalera</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Botella</string>
+		<key>image</key>
+		<string>botella</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Barril</string>
+		<key>image</key>
+		<string>barril</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Arbol</string>
+		<key>image</key>
+		<string>arbol</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Melon</string>
+		<key>image</key>
+		<string>melon</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Valiente</string>
+		<key>image</key>
+		<string>valiente</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Gorrito</string>
+		<key>image</key>
+		<string>gorrito</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Muerte</string>
+		<key>image</key>
+		<string>muerte</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Pera</string>
+		<key>image</key>
+		<string>pera</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Bandera</string>
+		<key>image</key>
+		<string>bandera</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Bandolon</string>
+		<key>image</key>
+		<string>bandolon</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Violoncello</string>
+		<key>image</key>
+		<string>violoncello</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Garza</string>
+		<key>image</key>
+		<string>garza</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Pajaro</string>
+		<key>image</key>
+		<string>pajaro</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Mano</string>
+		<key>image</key>
+		<string>mano</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Bota</string>
+		<key>image</key>
+		<string>bota</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>la Luna</string>
+		<key>image</key>
+		<string>luna</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Cotorro</string>
+		<key>image</key>
+		<string>cotorro</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Borracho</string>
+		<key>image</key>
+		<string>borracho</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Negrito</string>
+		<key>image</key>
+		<string>negrito</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Corazón</string>
+		<key>image</key>
+		<string>corazon</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Sandia</string>
+		<key>image</key>
+		<string>sandia</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Tambor</string>
+		<key>image</key>
+		<string>tambor</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Camarón</string>
+		<key>image</key>
+		<string>camaron</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Las Jaras</string>
+		<key>image</key>
+		<string>jaras</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Músico</string>
+		<key>image</key>
+		<string>musico</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Araña</string>
+		<key>image</key>
+		<string>arana</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Soldado</string>
+		<key>image</key>
+		<string>soldado</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Estrella</string>
+		<key>image</key>
+		<string>estrella</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Cazo</string>
+		<key>image</key>
+		<string>cazo</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Mundo</string>
+		<key>image</key>
+		<string>mundo</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Apache</string>
+		<key>image</key>
+		<string>apache</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Nopal</string>
+		<key>image</key>
+		<string>nopal</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Alacrán</string>
+		<key>image</key>
+		<string>alacran</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Rosa</string>
+		<key>image</key>
+		<string>rosa</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Calavera</string>
+		<key>image</key>
+		<string>calavera</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Campana</string>
+		<key>image</key>
+		<string>campana</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Cantarito</string>
+		<key>image</key>
+		<string>cantarito</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Venado</string>
+		<key>image</key>
+		<string>venado</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Sol</string>
+		<key>image</key>
+		<string>sol</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Corona</string>
+		<key>image</key>
+		<string>corona</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Chalupa</string>
+		<key>image</key>
+		<string>chalupa</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Pino</string>
+		<key>image</key>
+		<string>pino</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Pescado</string>
+		<key>image</key>
+		<string>pescado</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Palma</string>
+		<key>image</key>
+		<string>palma</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Maceta</string>
+		<key>image</key>
+		<string>maceta</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>El Arpa</string>
+		<key>image</key>
+		<string>arpa</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>La Rana</string>
+		<key>image</key>
+		<string>rana</string>
+	</dict>
+</array>
+</plist>

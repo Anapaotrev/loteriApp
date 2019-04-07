@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -208,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBX-pe-9EX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="710"/>
+            <point key="canvasLocation" x="1054" y="719"/>
         </scene>
         <!--Play View Controller-->
         <scene sceneID="F3u-oX-Ep8">
@@ -336,7 +336,7 @@
                                 <rect key="frame" x="115" y="137" width="62" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.65925310179999996" green="1" blue="0.98223734470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="CARTA" backgroundImage="10arbol"/>
+                                <state key="normal" title="CARTA" backgroundImage="arbol"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gg5-Xm-Ccc">
                                 <rect key="frame" x="195" y="137" width="62" height="102"/>
@@ -480,10 +480,10 @@
             </objects>
             <point key="canvasLocation" x="2900" y="483.50824587706148"/>
         </scene>
-        <!--View Controller-->
+        <!--Give View Controller-->
         <scene sceneID="0y9-Ps-b8T">
             <objects>
-                <viewController id="DyL-wY-f2L" sceneMemberID="viewController">
+                <viewController id="DyL-wY-f2L" customClass="GiveViewController" customModule="loteriApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uSK-md-066">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -560,6 +560,9 @@
                         <color key="backgroundColor" red="0.87710243463516235" green="0.83093255758285522" blue="0.72751832008361816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="n4D-y9-Vsz"/>
                     </view>
+                    <connections>
+                        <outlet property="cardImage" destination="hyt-IF-HMH" id="5KG-FN-nCe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L69-y3-KIF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -567,15 +570,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="10arbol" width="871" height="1379"/>
         <image name="CuadroChico" width="317" height="320"/>
         <image name="CuadroGrande" width="317" height="320"/>
         <image name="Decorations" width="709" height="174"/>
         <image name="Diagonal" width="317" height="320"/>
         <image name="Horizontal" width="317" height="320"/>
         <image name="Lleno" width="440" height="443"/>
-        <image name="Mariachi" width="900" height="519.84002685546875"/>
+        <image name="Mariachi" width="1875" height="1083"/>
         <image name="Vertical" width="317" height="320"/>
+        <image name="arbol" width="871" height="1379"/>
         <image name="bar" width="153" height="31"/>
         <image name="cactus" width="900" height="1300"/>
     </resources>
