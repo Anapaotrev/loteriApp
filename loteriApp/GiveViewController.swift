@@ -7,25 +7,42 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GiveViewController: UIViewController {
 
     var cards : NSArray!
     var dict : NSDictionary!
+    var counter : Int!
     @IBOutlet weak var cardImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cards.shuffle()
+//        cards.shuffle() // shuffle deck
         
         dict = cards[0] as! NSDictionary
         cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
+        counter = 0 // card counter
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBAction func nextCard(_ sender: Any) {
+        counter = counter + 1
+        dict = cards[counter] as! NSDictionary
+        cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
+        let utterance = AVSpeechUtterance(string: dict.value(forKey: "name") as! String)
+        utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
+        utterance.rate = 0.5
+        
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+    }
+    
     
     /*
     // MARK: - Navigation

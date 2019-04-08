@@ -32,7 +32,7 @@ class ViewController: UIViewController {
             let giveView = segue.destination as! GiveViewController
             giveView.cards = loteriaCards
         }
-        else if segue.identifier == "play" {
+        else if segue.identifier == "jugar" {
             let playView = segue.destination as! PlayViewController
             playView.cardNames = loteriaCards
         }
