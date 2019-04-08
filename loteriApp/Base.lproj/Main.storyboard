@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -77,7 +77,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Qrw-6F-2f3" kind="show" identifier="jugar" id="V6E-hd-IBA"/>
+                                    <segue destination="JBn-9b-edw" kind="show" identifier="selec" id="M5n-61-bZK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOTERIAPP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i42-dL-N7R">
@@ -113,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Seleccionar View Controller-->
         <scene sceneID="R7n-Z7-jws">
             <objects>
-                <viewController id="JBn-9b-edw" sceneMemberID="viewController">
+                <viewController id="JBn-9b-edw" customClass="SeleccionarViewController" customModule="loteriApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W94-QH-xDU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,45 +170,75 @@
                                         <real key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ob-3f-fhA">
-                                <rect key="frame" x="21" y="133" width="100" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Vertical" image="Vertical"/>
+                                <connections>
+                                    <segue destination="Qrw-6F-2f3" kind="show" identifier="play" id="n6b-sK-5K4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWc-yV-ANv">
                                 <rect key="frame" x="140" y="133" width="100" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Horizontal" image="Horizontal"/>
+                                <connections>
+                                    <action selector="seleccionarBoton:" destination="JBn-9b-edw" eventType="touchUpInside" id="hyg-Pj-BQQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ng8-u2-8DN">
                                 <rect key="frame" x="259" y="133" width="100" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Diagonal" image="Diagonal"/>
+                                <connections>
+                                    <action selector="seleccionarBoton:" destination="JBn-9b-edw" eventType="touchUpInside" id="1sA-dt-eEK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERv-EV-lzu">
                                 <rect key="frame" x="21" y="290" width="100" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cuadro Chico" image="CuadroChico"/>
+                                <state key="normal" title="CuadroChico" image="CuadroChico"/>
+                                <connections>
+                                    <action selector="seleccionarBoton:" destination="JBn-9b-edw" eventType="touchUpInside" id="GQP-Qg-G0D"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCi-0z-dQ9">
                                 <rect key="frame" x="140" y="290" width="100" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cuadro Grande" image="CuadroGrande"/>
+                                <state key="normal" title="CuadroGrande" image="CuadroGrande"/>
+                                <connections>
+                                    <action selector="seleccionarBoton:" destination="JBn-9b-edw" eventType="touchUpInside" id="V7e-w2-PO1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9f-fi-rlQ">
                                 <rect key="frame" x="259" y="290" width="100" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Llena" image="Lleno"/>
+                                <state key="normal" title="Lleno" image="Lleno"/>
+                                <connections>
+                                    <action selector="seleccionarBoton:" destination="JBn-9b-edw" eventType="touchUpInside" id="xFx-gN-afX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ob-3f-fhA">
+                                <rect key="frame" x="21" y="133" width="100" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="1"/>
+                                <state key="normal" title="Vertical" backgroundImage="Vertical"/>
+                                <connections>
+                                    <action selector="seleccionarBoton:" destination="JBn-9b-edw" eventType="touchUpInside" id="tXR-wk-0gy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.86131536960601807" green="0.81547236442565918" blue="0.71560174226760864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Bu7-VA-hS9"/>
                     </view>
+                    <connections>
+                        <outletCollection property="botonesCollection" destination="2ob-3f-fhA" collectionClass="NSMutableArray" id="OIv-XY-FQJ"/>
+                        <outletCollection property="botonesCollection" destination="tWc-yV-ANv" collectionClass="NSMutableArray" id="x6V-uD-sLq"/>
+                        <outletCollection property="botonesCollection" destination="ng8-u2-8DN" collectionClass="NSMutableArray" id="jQ5-wQ-sU3"/>
+                        <outletCollection property="botonesCollection" destination="ERv-EV-lzu" collectionClass="NSMutableArray" id="hxz-kF-e4W"/>
+                        <outletCollection property="botonesCollection" destination="cCi-0z-dQ9" collectionClass="NSMutableArray" id="ma2-xV-Ryc"/>
+                        <outletCollection property="botonesCollection" destination="P9f-fi-rlQ" collectionClass="NSMutableArray" id="we0-lv-lCd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBX-pe-9EX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="719"/>
+            <point key="canvasLocation" x="1053.5999999999999" y="508.69565217391306"/>
         </scene>
         <!--Play View Controller-->
         <scene sceneID="F3u-oX-Ep8">
@@ -367,11 +397,19 @@
                                     <action selector="goBack:" destination="Qrw-6F-2f3" eventType="touchUpInside" id="Szs-47-bej"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVk-wt-bXg">
+                                <rect key="frame" x="223" y="104" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.87710243463516235" green="0.83093255758285522" blue="0.72751832008361816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="DL0-bl-FKa"/>
                     </view>
                     <connections>
+                        <outlet property="lbForma" destination="nVk-wt-bXg" id="eZ4-Og-0Hg"/>
                         <outletCollection property="cardCollection" destination="QFL-Ck-VSQ" collectionClass="NSMutableArray" id="9jR-OX-4gS"/>
                         <outletCollection property="cardCollection" destination="8hx-iT-Tsz" collectionClass="NSMutableArray" id="OKa-0E-gfg"/>
                         <outletCollection property="cardCollection" destination="Gg5-Xm-Ccc" collectionClass="NSMutableArray" id="bfB-PV-Tw1"/>
@@ -392,7 +430,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FI6-vq-gTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1898" y="296"/>
+            <point key="canvasLocation" x="1968.8" y="508.69565217391306"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="o46-xH-sb2">
@@ -478,7 +516,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="paM-Os-jwz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2900" y="483.50824587706148"/>
+            <point key="canvasLocation" x="2900" y="509"/>
         </scene>
         <!--Give View Controller-->
         <scene sceneID="0y9-Ps-b8T">

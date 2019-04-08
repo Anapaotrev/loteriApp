@@ -14,9 +14,12 @@ class PlayViewController: UIViewController {
     
     var cardNames: NSArray!
     
+    var formaGanar: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         generateCards()
+        lbForma.text = formaGanar
     }
     
     override func didReceiveMemoryWarning() {
