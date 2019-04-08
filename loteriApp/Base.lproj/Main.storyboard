@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -157,7 +157,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85424071550369263" green="0.59114807844161987" blue="0.17440196871757507" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Z2-OA-iaH" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Z2-OA-iaH" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
                                 <rect key="frame" x="132" y="495" width="116" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.23710581659999999" green="0.1350457072" blue="0.13199409840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -228,6 +228,7 @@
                         <viewLayoutGuide key="safeArea" id="Bu7-VA-hS9"/>
                     </view>
                     <connections>
+                        <outlet property="btnJugar" destination="5Z2-OA-iaH" id="82r-tZ-ceh"/>
                         <outletCollection property="botonesCollection" destination="2ob-3f-fhA" collectionClass="NSMutableArray" id="OIv-XY-FQJ"/>
                         <outletCollection property="botonesCollection" destination="tWc-yV-ANv" collectionClass="NSMutableArray" id="x6V-uD-sLq"/>
                         <outletCollection property="botonesCollection" destination="ng8-u2-8DN" collectionClass="NSMutableArray" id="jQ5-wQ-sU3"/>
@@ -531,6 +532,9 @@
                                         <real key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goBack:" destination="DyL-wY-f2L" eventType="touchUpInside" id="JfU-XI-YAB"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyt-IF-HMH">
                                 <rect key="frame" x="68" y="169" width="240" height="281"/>
@@ -609,7 +613,7 @@
         <image name="Diagonal" width="317" height="320"/>
         <image name="Horizontal" width="317" height="320"/>
         <image name="Lleno" width="440" height="443"/>
-        <image name="Mariachi" width="900" height="519.84002685546875"/>
+        <image name="Mariachi" width="1875" height="1083"/>
         <image name="Vertical" width="317" height="320"/>
         <image name="arbol" width="871" height="1379"/>
         <image name="bar" width="153" height="31"/>

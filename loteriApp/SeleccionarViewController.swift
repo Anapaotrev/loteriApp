@@ -10,6 +10,7 @@ import UIKit
 
 class SeleccionarViewController: UIViewController {
     
+    @IBOutlet weak var btnJugar: RoundButton!
     @IBOutlet var botonesCollection: [UIButton]!
     var formaGanar: String!
     var cardNames: NSArray!
@@ -19,6 +20,7 @@ class SeleccionarViewController: UIViewController {
     }
     
     @IBAction func seleccionarBoton(_ sender: UIButton) {
+        btnJugar.isEnabled = true
         formaGanar = sender.currentTitle
         for index in 0 ..< botonesCollection.count {
             botonesCollection[index].setImage(UIImage(named: botonesCollection[index].currentTitle!), for: .normal)

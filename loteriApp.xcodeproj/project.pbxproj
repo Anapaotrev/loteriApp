@@ -10,6 +10,7 @@
 		34309CC1225AB68100FC46AC /* SeleccionarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34309CC0225AB68100FC46AC /* SeleccionarViewController.swift */; };
 		34BD08332243F6C3007AB14B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BD08322243F6C3007AB14B /* Assets.xcassets */; };
 		34BD08372244057B007AB14B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD08362244057B007AB14B /* RoundButton.swift */; };
+		34EBF3A3225B0CD50020BEEC /* western.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 4A34F678225AB76400FB52F3 /* western.TTF */; };
 		4A34F677225AAAF900FB52F3 /* LoteriaCards.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A34F676225AAAF900FB52F3 /* LoteriaCards.plist */; };
 		4A34F67A225ABF9000FB52F3 /* GiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F679225ABF9000FB52F3 /* GiveViewController.swift */; };
 		4AA3594122486101003A2944 /* Loteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3594022486101003A2944 /* Loteria.swift */; };
@@ -147,6 +148,7 @@
 				4A34F677225AAAF900FB52F3 /* LoteriaCards.plist in Resources */,
 				34BD08332243F6C3007AB14B /* Assets.xcassets in Resources */,
 				4AA3B8412243066D0077E1B6 /* Main.storyboard in Resources */,
+				34EBF3A3225B0CD50020BEEC /* western.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

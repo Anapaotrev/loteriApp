@@ -21,7 +21,7 @@ class GiveViewController: UIViewController {
         super.viewDidLoad()
         shuffledCards = cards.shuffled() as NSArray// shuffle deck
         
-        dict = shuffledCards[0] as! NSDictionary
+        dict = shuffledCards[0] as? NSDictionary
         cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
         counter = 0 // card counter
     }
@@ -31,10 +31,13 @@ class GiveViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func goBack(_ sender: Any) {
+        view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func nextCard(_ sender: Any) {
         counter = counter + 1
-        dict = shuffledCards[counter] as! NSDictionary
+        dict = shuffledCards[counter] as? NSDictionary
         cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
         let utterance = AVSpeechUtterance(string: dict.value(forKey: "name") as! String)
         utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")

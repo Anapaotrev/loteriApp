@@ -27,7 +27,7 @@ class PlayViewController: UIViewController {
     }
     
     @IBAction func goBack(_ sender: Any) {
-        
+        view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
     func generateCards(){
