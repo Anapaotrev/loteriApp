@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34309CC1225AB68100FC46AC /* SeleccionarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34309CC0225AB68100FC46AC /* SeleccionarViewController.swift */; };
 		34BD08332243F6C3007AB14B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BD08322243F6C3007AB14B /* Assets.xcassets */; };
 		34BD08372244057B007AB14B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BD08362244057B007AB14B /* RoundButton.swift */; };
 		4AA3594122486101003A2944 /* Loteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3594022486101003A2944 /* Loteria.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34309CC0225AB68100FC46AC /* SeleccionarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeleccionarViewController.swift; sourceTree = "<group>"; };
 		34BD08322243F6C3007AB14B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34BD08362244057B007AB14B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		4AA3594022486101003A2944 /* Loteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loteria.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				4AA3B83D2243066D0077E1B6 /* ViewController.swift */,
 				34BD08362244057B007AB14B /* RoundButton.swift */,
 				4AA3B83F2243066D0077E1B6 /* Main.storyboard */,
+				34309CC0225AB68100FC46AC /* SeleccionarViewController.swift */,
 				4AA3594022486101003A2944 /* Loteria.swift */,
 				4AA3B8442243066D0077E1B6 /* LaunchScreen.storyboard */,
 				4AA3B8472243066D0077E1B6 /* Info.plist */,
@@ -152,6 +155,7 @@
 				4AA3594122486101003A2944 /* Loteria.swift in Sources */,
 				4AA3594322486338003A2944 /* PlayViewController.swift in Sources */,
 				34BD08372244057B007AB14B /* RoundButton.swift in Sources */,
+				34309CC1225AB68100FC46AC /* SeleccionarViewController.swift in Sources */,
 				4AA3B83E2243066D0077E1B6 /* ViewController.swift in Sources */,
 				4AA3B83C2243066D0077E1B6 /* AppDelegate.swift in Sources */,
 			);

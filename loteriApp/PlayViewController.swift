@@ -12,6 +12,8 @@ class PlayViewController: UIViewController {
 
     @IBOutlet var cardCollection: [UIButton]!
     
+    @IBOutlet weak var lbForma: UILabel!
+    
     let cardNames: [Int: String] = [
         1:"1gallo",2:"2diablito",3:"3dama",4:"4catrin",5:"5paraguas",
         6:"6sirena",7:"7escalera",8:"8botella",9:"9barril",10:"10arbol",
@@ -25,9 +27,12 @@ class PlayViewController: UIViewController {
         46:"46sol",47:"47corona",48:"48chalupa",49:"49pino",50:"50pescado",
         51:"51palma",52:"52maceta",53:"arpa",54:"54ranas"]
     
+    var formaGanar: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         generateCards()
+        lbForma.text = formaGanar
     }
     
     override func didReceiveMemoryWarning() {
