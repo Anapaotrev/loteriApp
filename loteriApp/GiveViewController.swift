@@ -20,9 +20,8 @@ class GiveViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        shuffledCards = cards.shuffled() as NSArray// shuffle deck
+        shuffledCards = cards.shuffled() as NSArray// shuffle deck
         
-        shuffledCards = cards
         dict = shuffledCards[0] as? NSDictionary
         cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
         counter = 0 // card counter
