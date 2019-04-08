@@ -1,10 +1,11 @@
-//
-//  PlayViewController.swift
-//  loteriApp
-//
-//  Created by Ana Paola Treviño on 3/24/19.
-//  Copyright © 2019 Ana Paola Treviño. All rights reserved.
-//
+/*
+  PlayViewController.swift
+  loteriApp
+ 
+  Ana Paola Treviño
+  Eduardo Aguilar
+  Luis Gerardo Bravo
+*/
 
 import UIKit
 
@@ -13,7 +14,6 @@ class PlayViewController: UIViewController {
     @IBOutlet var cardCollection: [UIButton]!
     
     var cardNames: NSArray!
-    
     var formaGanar: String!
     
     override func viewDidLoad() {
@@ -26,11 +26,7 @@ class PlayViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func goBack(_ sender: Any) {
-        view.window?.rootViewController?.dismiss(animated: true, completion: nil)
-    }
-    
-    func generateCards(){
+    func generateCards() {
         var cardsGenerated : Set = [-1]
         //for every button
         for card in cardCollection {
@@ -38,7 +34,7 @@ class PlayViewController: UIViewController {
             var number = Int(arc4random_uniform(54))
             var generatedCopy = true
             while(generatedCopy){
-                if(!cardsGenerated.contains(number)){
+                if(!cardsGenerated.contains(number)) {
                     cardsGenerated.insert(number)
                     generatedCopy = false
                     //set button image according ot number
@@ -46,13 +42,30 @@ class PlayViewController: UIViewController {
                     let image = UIImage(named: dict.value(forKey: "image") as! String)
                     card.setBackgroundImage(image, for: .normal)
                     card.setTitle(String(number), for: .normal)
-                }else{
+                } else{
                     number = Int(arc4random_uniform(54))
                 }
             }
         }
         //set corners as equals
         cardCollection[12].setBackgroundImage(cardCollection[3].backgroundImage(for: .normal) , for: .normal)
+    }
+    
+    @IBAction func selectCard(_ sender: UIButton) {
+        let overlay = UIView(frame: CGRect(x: 0, y: 0, width: sender.frame.width, height: sender.frame.height))
+        overlay.backgroundColor = UIColor.black
+        overlay.sizeToFit()
+        overlay.alpha = CGFloat(floatLiteral: 0.5)
+        sender.addSubview(overlay)
+//        sender.bringSubview(toFront: overlay)
+    }
+    
+    @IBAction func unselectCard( sender: UIView) {
+        
+    }
+    
+    @IBAction func goBack(_ sender: Any) {
+        view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
     /*

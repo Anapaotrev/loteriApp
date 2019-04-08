@@ -22,7 +22,7 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>El Catrin</string>
+		<string>El Catrín</string>
 		<key>image</key>
 		<string>catrin</string>
 	</dict>
@@ -64,7 +64,7 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>El Melon</string>
+		<string>El Melón</string>
 		<key>image</key>
 		<string>melon</string>
 	</dict>
@@ -100,7 +100,7 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>El Bandolon</string>
+		<string>El Bandolón</string>
 		<key>image</key>
 		<string>bandolon</string>
 	</dict>
@@ -118,7 +118,7 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>El Pajaro</string>
+		<string>El Pájaro</string>
 		<key>image</key>
 		<string>pajaro</string>
 	</dict>
@@ -166,7 +166,7 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>La Sandia</string>
+		<string>La Sandía</string>
 		<key>image</key>
 		<string>sandia</string>
 	</dict>

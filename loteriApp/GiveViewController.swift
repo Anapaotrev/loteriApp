@@ -1,10 +1,11 @@
-//
-//  GiveViewController.swift
-//  loteriApp
-//
-//  Created by Ana Paola Treviño on 4/7/19.
-//  Copyright © 2019 Ana Paola Treviño. All rights reserved.
-//
+/*
+  GiveViewController.swift
+  loteriApp
+
+  Ana Paola Treviño
+  Eduardo Aguilar
+  Luis Gerardo Bravo
+*/
 
 import UIKit
 import AVFoundation
@@ -19,8 +20,9 @@ class GiveViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        shuffledCards = cards.shuffled() as NSArray// shuffle deck
+//        shuffledCards = cards.shuffled() as NSArray// shuffle deck
         
+        shuffledCards = cards
         dict = shuffledCards[0] as? NSDictionary
         cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
         counter = 0 // card counter
@@ -37,14 +39,16 @@ class GiveViewController: UIViewController {
     
     @IBAction func nextCard(_ sender: Any) {
         counter = counter + 1
-        dict = shuffledCards[counter] as? NSDictionary
-        cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
-        let utterance = AVSpeechUtterance(string: dict.value(forKey: "name") as! String)
-        utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
-        utterance.rate = 0.5
-        
-        let synthesizer = AVSpeechSynthesizer()
-        synthesizer.speak(utterance)
+        if counter < 54 {
+            dict = shuffledCards[counter] as? NSDictionary
+            cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
+            let utterance = AVSpeechUtterance(string: dict.value(forKey: "name") as! String)
+            utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
+            utterance.rate = 0.5
+            
+            let synthesizer = AVSpeechSynthesizer()
+            synthesizer.speak(utterance)
+        }
     }
     
     
