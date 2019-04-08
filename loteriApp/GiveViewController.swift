@@ -12,15 +12,16 @@ import AVFoundation
 class GiveViewController: UIViewController {
 
     var cards : NSArray!
+    var shuffledCards : NSArray!
     var dict : NSDictionary!
     var counter : Int!
     @IBOutlet weak var cardImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        cards.shuffle() // shuffle deck
+        shuffledCards = cards.shuffled() as NSArray// shuffle deck
         
-        dict = cards[0] as! NSDictionary
+        dict = shuffledCards[0] as! NSDictionary
         cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
         counter = 0 // card counter
     }
@@ -33,7 +34,7 @@ class GiveViewController: UIViewController {
     
     @IBAction func nextCard(_ sender: Any) {
         counter = counter + 1
-        dict = cards[counter] as! NSDictionary
+        dict = shuffledCards[counter] as! NSDictionary
         cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
         let utterance = AVSpeechUtterance(string: dict.value(forKey: "name") as! String)
         utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
