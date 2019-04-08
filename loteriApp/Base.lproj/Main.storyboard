@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -397,19 +397,11 @@
                                     <action selector="goBack:" destination="Qrw-6F-2f3" eventType="touchUpInside" id="Szs-47-bej"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVk-wt-bXg">
-                                <rect key="frame" x="223" y="104" width="79" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.87710243463516235" green="0.83093255758285522" blue="0.72751832008361816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="DL0-bl-FKa"/>
                     </view>
                     <connections>
-                        <outlet property="lbForma" destination="nVk-wt-bXg" id="eZ4-Og-0Hg"/>
                         <outletCollection property="cardCollection" destination="QFL-Ck-VSQ" collectionClass="NSMutableArray" id="9jR-OX-4gS"/>
                         <outletCollection property="cardCollection" destination="8hx-iT-Tsz" collectionClass="NSMutableArray" id="OKa-0E-gfg"/>
                         <outletCollection property="cardCollection" destination="Gg5-Xm-Ccc" collectionClass="NSMutableArray" id="bfB-PV-Tw1"/>
@@ -617,7 +609,7 @@
         <image name="Diagonal" width="317" height="320"/>
         <image name="Horizontal" width="317" height="320"/>
         <image name="Lleno" width="440" height="443"/>
-        <image name="Mariachi" width="1875" height="1083"/>
+        <image name="Mariachi" width="900" height="519.84002685546875"/>
         <image name="Vertical" width="317" height="320"/>
         <image name="arbol" width="871" height="1379"/>
         <image name="bar" width="153" height="31"/>

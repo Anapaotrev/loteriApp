@@ -11,7 +11,6 @@ import UIKit
 class PlayViewController: UIViewController {
 
     @IBOutlet var cardCollection: [UIButton]!
-    @IBOutlet weak var lbForma: UILabel!
     
     var cardNames: NSArray!
     
@@ -20,7 +19,6 @@ class PlayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         generateCards()
-        lbForma.text = formaGanar
     }
     
     override func didReceiveMemoryWarning() {
