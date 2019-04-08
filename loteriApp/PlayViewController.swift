@@ -11,6 +11,7 @@ import UIKit
 class PlayViewController: UIViewController {
 
     @IBOutlet var cardCollection: [UIButton]!
+    @IBOutlet weak var lbForma: UILabel!
     
     var cardNames: NSArray!
     
@@ -32,14 +33,28 @@ class PlayViewController: UIViewController {
     }
     
     func generateCards(){
+        var cardsGenerated : Set = [-1]
+        //for every button
         for card in cardCollection {
-            let number = Int(arc4random_uniform(54))
-//            let number = Int.random(in: 1 ..< 54)
-            let dict = cardNames[number] as! NSDictionary
-            let image = UIImage(named: dict.value(forKey: "image") as! String)
-            card.setBackgroundImage(image, for: .normal)
-            card.setTitle(String(number), for: .normal)
+            //generate a unique number
+            var number = Int(arc4random_uniform(54))
+            var generatedCopy = true
+            while(generatedCopy){
+                if(!cardsGenerated.contains(number)){
+                    cardsGenerated.insert(number)
+                    generatedCopy = false
+                    //set button image according ot number
+                    let dict = cardNames[number] as! NSDictionary
+                    let image = UIImage(named: dict.value(forKey: "image") as! String)
+                    card.setBackgroundImage(image, for: .normal)
+                    card.setTitle(String(number), for: .normal)
+                }else{
+                    number = Int(arc4random_uniform(54))
+                }
+            }
         }
+        //set corners as equals
+        cardCollection[12].setBackgroundImage(cardCollection[3].backgroundImage(for: .normal) , for: .normal)
     }
     
     /*

@@ -12,7 +12,8 @@ class SeleccionarViewController: UIViewController {
     
     @IBOutlet var botonesCollection: [UIButton]!
     var formaGanar: String!
-
+    var cardNames: NSArray!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -31,6 +32,7 @@ class SeleccionarViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vistaPlay = segue.destination as! PlayViewController
         vistaPlay.formaGanar = formaGanar
+        vistaPlay.cardNames = cardNames
     }
 
 }
