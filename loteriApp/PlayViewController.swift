@@ -19,6 +19,7 @@ class PlayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         generateCards()
+        print(formaGanar)
     }
     
     override func didReceiveMemoryWarning() {
