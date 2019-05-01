@@ -9,9 +9,11 @@
 
 import UIKit
 
-class PlayViewController: UIViewController {
+class PlayViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet var cardCollection: [UIButton]!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var cardsView: UIView!
     
     var cardNames: NSArray!
     var formaGanar: String!
@@ -20,6 +22,12 @@ class PlayViewController: UIViewController {
         super.viewDidLoad()
         generateCards()
         print(formaGanar)
+        
+        scrollView.addSubview(cardsView)
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return cardsView
     }
     
     override func didReceiveMemoryWarning() {
