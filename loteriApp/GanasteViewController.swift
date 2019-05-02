@@ -20,6 +20,9 @@ class GanasteViewController: UIViewController {
         view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func goBackOne(_ sender: RoundButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
