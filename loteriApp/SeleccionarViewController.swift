@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class SeleccionarViewController: UIViewController {
     
@@ -35,6 +36,7 @@ class SeleccionarViewController: UIViewController {
         let vistaPlay = segue.destination as! PlayViewController
         vistaPlay.formaGanar = formaGanar
         vistaPlay.cardNames = cardNames
+        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
