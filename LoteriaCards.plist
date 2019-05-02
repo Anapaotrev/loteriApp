@@ -7,324 +7,432 @@
 		<string>El Gallo</string>
 		<key>image</key>
 		<string>gallo</string>
+		<key>bw</key>
+		<string>bwgallo</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Diablito</string>
 		<key>image</key>
 		<string>diablito</string>
+		<key>bw</key>
+		<string>bwdiablito</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Dama</string>
 		<key>image</key>
 		<string>dama</string>
+		<key>bw</key>
+		<string>bwdama</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Catrín</string>
 		<key>image</key>
 		<string>catrin</string>
+		<key>bw</key>
+		<string>bwcatrin</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Paraguas</string>
 		<key>image</key>
 		<string>paraguas</string>
+		<key>bw</key>
+		<string>bwparaguas</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Sirena</string>
 		<key>image</key>
 		<string>sirena</string>
+		<key>bw</key>
+		<string>bwsirena</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Escalera</string>
 		<key>image</key>
 		<string>escalera</string>
+		<key>bw</key>
+		<string>bwescalera</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Botella</string>
 		<key>image</key>
 		<string>botella</string>
+		<key>bw</key>
+		<string>bwbotella</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Barril</string>
 		<key>image</key>
 		<string>barril</string>
+		<key>bw</key>
+		<string>bwbarril</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Arbol</string>
 		<key>image</key>
 		<string>arbol</string>
+		<key>bw</key>
+		<string>bwarbol</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Melón</string>
 		<key>image</key>
 		<string>melon</string>
+		<key>bw</key>
+		<string>bwmelon</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Valiente</string>
 		<key>image</key>
 		<string>valiente</string>
+		<key>bw</key>
+		<string>bwvaliente</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Gorrito</string>
 		<key>image</key>
 		<string>gorrito</string>
+		<key>bw</key>
+		<string>bwgorrito</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Muerte</string>
 		<key>image</key>
 		<string>muerte</string>
+		<key>bw</key>
+		<string>bwmuerte</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Pera</string>
 		<key>image</key>
 		<string>pera</string>
+		<key>bw</key>
+		<string>bwpera</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Bandera</string>
 		<key>image</key>
 		<string>bandera</string>
+		<key>bw</key>
+		<string>bwbandera</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Bandolón</string>
 		<key>image</key>
 		<string>bandolon</string>
+		<key>bw</key>
+		<string>bwbandolon</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Violoncello</string>
 		<key>image</key>
 		<string>violoncello</string>
+		<key>bw</key>
+		<string>bwvioloncello</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Garza</string>
 		<key>image</key>
 		<string>garza</string>
+		<key>bw</key>
+		<string>bwgarza</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Pájaro</string>
 		<key>image</key>
 		<string>pajaro</string>
+		<key>bw</key>
+		<string>bwpajaro</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Mano</string>
 		<key>image</key>
 		<string>mano</string>
+		<key>bw</key>
+		<string>bwmano</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Bota</string>
 		<key>image</key>
 		<string>bota</string>
+		<key>bw</key>
+		<string>bwbota</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>la Luna</string>
 		<key>image</key>
 		<string>luna</string>
+		<key>bw</key>
+		<string>bwluna</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Cotorro</string>
 		<key>image</key>
 		<string>cotorro</string>
+		<key>bw</key>
+		<string>bwcotorro</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Borracho</string>
 		<key>image</key>
 		<string>borracho</string>
+		<key>bw</key>
+		<string>bwborracho</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Negrito</string>
 		<key>image</key>
 		<string>negrito</string>
+		<key>bw</key>
+		<string>bwnegrito</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Corazón</string>
 		<key>image</key>
 		<string>corazon</string>
+		<key>bw</key>
+		<string>bwcorazon</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Sandía</string>
 		<key>image</key>
 		<string>sandia</string>
+		<key>bw</key>
+		<string>bwsandia</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Tambor</string>
 		<key>image</key>
 		<string>tambor</string>
+		<key>bw</key>
+		<string>bwtambor</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Camarón</string>
 		<key>image</key>
 		<string>camaron</string>
+		<key>bw</key>
+		<string>bwcamaron</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Las Jaras</string>
 		<key>image</key>
 		<string>jaras</string>
+		<key>bw</key>
+		<string>bwjaras</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Músico</string>
 		<key>image</key>
 		<string>musico</string>
+		<key>bw</key>
+		<string>bwmusico</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Araña</string>
 		<key>image</key>
 		<string>arana</string>
+		<key>bw</key>
+		<string>bwarana</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Soldado</string>
 		<key>image</key>
 		<string>soldado</string>
+		<key>bw</key>
+		<string>bwsoldado</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Estrella</string>
 		<key>image</key>
 		<string>estrella</string>
+		<key>bw</key>
+		<string>bwestrella</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Cazo</string>
 		<key>image</key>
 		<string>cazo</string>
+		<key>bw</key>
+		<string>bwcazo</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Mundo</string>
 		<key>image</key>
 		<string>mundo</string>
+		<key>bw</key>
+		<string>bwmundo</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Apache</string>
 		<key>image</key>
 		<string>apache</string>
+		<key>bw</key>
+		<string>bwapache</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Nopal</string>
 		<key>image</key>
 		<string>nopal</string>
+		<key>bw</key>
+		<string>bwnopal</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Alacrán</string>
 		<key>image</key>
 		<string>alacran</string>
+		<key>bw</key>
+		<string>bwalacran</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Rosa</string>
 		<key>image</key>
 		<string>rosa</string>
+		<key>bw</key>
+		<string>bwrosa</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Calavera</string>
 		<key>image</key>
 		<string>calavera</string>
+		<key>bw</key>
+		<string>bwcalavera</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Campana</string>
 		<key>image</key>
 		<string>campana</string>
+		<key>bw</key>
+		<string>bwcampana</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Cantarito</string>
 		<key>image</key>
 		<string>cantarito</string>
+		<key>bw</key>
+		<string>bwcantarito</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Venado</string>
 		<key>image</key>
 		<string>venado</string>
+		<key>bw</key>
+		<string>bwvenado</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Sol</string>
 		<key>image</key>
 		<string>sol</string>
+		<key>bw</key>
+		<string>bwsol</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Corona</string>
 		<key>image</key>
 		<string>corona</string>
+		<key>bw</key>
+		<string>bwcorona</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Chalupa</string>
 		<key>image</key>
 		<string>chalupa</string>
+		<key>bw</key>
+		<string>bwchalupa</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Pino</string>
 		<key>image</key>
 		<string>pino</string>
+		<key>bw</key>
+		<string>bwpino</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Pescado</string>
 		<key>image</key>
 		<string>pescado</string>
+		<key>bw</key>
+		<string>bwpescado</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Palma</string>
 		<key>image</key>
 		<string>palma</string>
+		<key>bw</key>
+		<string>bwpalma</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Maceta</string>
 		<key>image</key>
 		<string>maceta</string>
+		<key>bw</key>
+		<string>bwmaceta</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>El Arpa</string>
 		<key>image</key>
 		<string>arpa</string>
+		<key>bw</key>
+		<string>bwarpa</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>La Rana</string>
 		<key>image</key>
 		<string>rana</string>
+		<key>bw</key>
+		<string>bwrana</string>
 	</dict>
 </array>
 </plist>

@@ -24,10 +24,10 @@ class GiveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         shuffledCards = cards.shuffled() as NSArray// shuffle deck
-        
+//        shuffledCards = cards
         dict = shuffledCards[0] as? NSDictionary
         cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
-
+        voiceCard(cardName: dict.value(forKey: "name") as! String)
         counter = 0 // card counter
         
         divisor = (view.frame.width / 2) / 0.61
@@ -51,12 +51,7 @@ class GiveViewController: UIViewController {
         if counter < 54 || counter > 0 {
             dict = shuffledCards[counter] as? NSDictionary
             cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
-            let utterance = AVSpeechUtterance(string: dict.value(forKey: "name") as! String)
-            utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
-            utterance.rate = 0.5
-            
-            let synthesizer = AVSpeechSynthesizer()
-            synthesizer.speak(utterance)
+            voiceCard(cardName: dict.value(forKey: "name") as! String)
         }
     }
     
@@ -76,6 +71,14 @@ class GiveViewController: UIViewController {
             let synthesizer = AVSpeechSynthesizer()
             synthesizer.speak(utterance)
         }
+
+    func voiceCard(cardName: String) {
+        let utterance = AVSpeechUtterance(string: cardName)
+        utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
+        utterance.rate = 0.5
+        
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
     }
 
     @IBAction func panCard(_ sender: UIPanGestureRecognizer) {
@@ -114,5 +117,12 @@ class GiveViewController: UIViewController {
             self.card.alpha = 1
             self.card.transform = .identity
         })
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
+      
+    override var shouldAutorotate: Bool {
+        return false
     }
 }
