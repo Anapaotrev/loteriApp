@@ -12,9 +12,17 @@ import UIKit
 class ViewController: UIViewController {
     
     var loteriaCards : NSArray!
-
+    @IBOutlet weak var dar: RoundButton!
+    @IBOutlet weak var jugar: RoundButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dar.titleLabel?.minimumScaleFactor = 0.5 //set whatever you want here to scale
+        dar.titleLabel?.adjustsFontSizeToFitWidth = true
+        
+        jugar.titleLabel?.minimumScaleFactor = 0.5 //set whatever you want here to scale
+        jugar.titleLabel?.adjustsFontSizeToFitWidth = true
         
         let path = Bundle.main.path(forResource:
             "LoteriaCards", ofType: "plist")
