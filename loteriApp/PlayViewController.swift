@@ -9,10 +9,9 @@
 
 import UIKit
 
-class PlayViewController: UIViewController, UIScrollViewDelegate {
+class PlayViewController: UIViewController, UIScrollViewDelegate, UIPopoverPresentationControllerDelegate {
     
     // MARK: - Outlets, variables
-
     @IBOutlet var cardCollection: [UIButton]!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var cardsView: UIView!
@@ -60,7 +59,6 @@ class PlayViewController: UIViewController, UIScrollViewDelegate {
                     let image = UIImage(named: dict.value(forKey: "image") as! String)
                     card.setBackgroundImage(image, for: .normal)
                     card.setTitle(String(number), for: .normal)
-                    print(card.tag)
                 } else{
                     number = Int(arc4random_uniform(54))
                 }
@@ -89,7 +87,18 @@ class PlayViewController: UIViewController, UIScrollViewDelegate {
         checkWinState()
     }
     
-    // Des Select all of the cards
+    // MARK: - POP over
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let popver = segue.destination as! PopOverViewController
+        popver.popoverPresentationController!.delegate = self
+    }
+    
+    // reusar la misma tabla
     @IBAction func eraseSelected(_ sender: Any) {
         for card in cardCollection {
             if card.isSelected {
@@ -100,7 +109,19 @@ class PlayViewController: UIViewController, UIScrollViewDelegate {
             }
         }
     }
+  
+    func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool {
+        return false
+    }
     
+    /*
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+  
     // MARK: - Lotery Logic
     
     func checkCards(arr: [Int]) -> Bool {

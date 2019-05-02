@@ -13,6 +13,7 @@
 		34EBF3A3225B0CD50020BEEC /* western.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 4A34F678225AB76400FB52F3 /* western.TTF */; };
 		4A34F677225AAAF900FB52F3 /* LoteriaCards.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A34F676225AAAF900FB52F3 /* LoteriaCards.plist */; };
 		4A34F67A225ABF9000FB52F3 /* GiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F679225ABF9000FB52F3 /* GiveViewController.swift */; };
+		4A9DC49A227AA9B200519F7E /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DC499227AA9B200519F7E /* PopOverViewController.swift */; };
 		4AA3594122486101003A2944 /* Loteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3594022486101003A2944 /* Loteria.swift */; };
 		4AA3594322486338003A2944 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3594222486338003A2944 /* PlayViewController.swift */; };
 		4AA3B83C2243066D0077E1B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3B83B2243066D0077E1B6 /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 		4A34F676225AAAF900FB52F3 /* LoteriaCards.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LoteriaCards.plist; sourceTree = "<group>"; };
 		4A34F678225AB76400FB52F3 /* western.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = western.TTF; sourceTree = "<group>"; };
 		4A34F679225ABF9000FB52F3 /* GiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveViewController.swift; sourceTree = "<group>"; };
+		4A9DC499227AA9B200519F7E /* PopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
 		4AA3594022486101003A2944 /* Loteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loteria.swift; sourceTree = "<group>"; };
 		4AA3594222486338003A2944 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		4AA3B8382243066D0077E1B6 /* loteriApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loteriApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,7 @@
 				34BD08322243F6C3007AB14B /* Assets.xcassets */,
 				4A34F678225AB76400FB52F3 /* western.TTF */,
 				4AA3594222486338003A2944 /* PlayViewController.swift */,
+				4A9DC499227AA9B200519F7E /* PopOverViewController.swift */,
 				4A34F679225ABF9000FB52F3 /* GiveViewController.swift */,
 			);
 			path = loteriApp;
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9DC49A227AA9B200519F7E /* PopOverViewController.swift in Sources */,
 				6FD67DC1227ADF0300F59600 /* GanasteViewController.swift in Sources */,
 				4AA3594122486101003A2944 /* Loteria.swift in Sources */,
 				4A34F67A225ABF9000FB52F3 /* GiveViewController.swift in Sources */,
