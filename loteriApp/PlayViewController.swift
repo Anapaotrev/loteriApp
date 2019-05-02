@@ -10,6 +10,8 @@
 import UIKit
 
 class PlayViewController: UIViewController, UIScrollViewDelegate {
+    
+    // MARK: - Outlets, variables
 
     @IBOutlet var cardCollection: [UIButton]!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -19,7 +21,9 @@ class PlayViewController: UIViewController, UIScrollViewDelegate {
     var formaGanar: String!
     
     var cardsGenerated : Set = [-1]
-    var cardsSelected = [Int]()
+    var cardsSelectedForGameSetup = [Int]()
+    
+    // MARK: - QOL
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +42,8 @@ class PlayViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - Card Functionality
+    
     func generateCards() {
         //for every button
         for card in cardCollection {
@@ -47,7 +53,7 @@ class PlayViewController: UIViewController, UIScrollViewDelegate {
             while(generatedCopy){
                 if(!cardsGenerated.contains(number)) {
                     cardsGenerated.insert(number)
-                    cardsSelected.append(number)
+                    cardsSelectedForGameSetup.append(number)
                     generatedCopy = false
                     //set button image according ot number
                     let dict = cardNames[number] as! NSDictionary
@@ -62,11 +68,11 @@ class PlayViewController: UIViewController, UIScrollViewDelegate {
         }
         //set corners as equals
         cardCollection[12].setBackgroundImage(cardCollection[3].backgroundImage(for: .normal) , for: .normal)
-        cardsSelected[12] = cardsSelected[3]
+        cardsSelectedForGameSetup[12] = cardsSelectedForGameSetup[3]
     }
     
     @IBAction func selectCard(_ sender: UIButton) {
-        let num = cardsSelected[sender.tag]
+        let num = cardsSelectedForGameSetup[sender.tag]
         let dict = cardNames[num] as! NSDictionary
         var image : UIImage!
         
@@ -80,17 +86,14 @@ class PlayViewController: UIViewController, UIScrollViewDelegate {
             sender.isSelected = true
         }
         sender.setBackgroundImage(image, for: .normal)
-    }
-    
-    @IBAction func goBack(_ sender: Any) {
-        view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        checkWinState()
     }
     
     // Des Select all of the cards
     @IBAction func eraseSelected(_ sender: Any) {
         for card in cardCollection {
             if card.isSelected {
-                let dict = cardNames[cardsSelected[card.tag]] as! NSDictionary
+                let dict = cardNames[cardsSelectedForGameSetup[card.tag]] as! NSDictionary
                 let image = UIImage(named: dict.value(forKey: "image") as! String)
                 card.setBackgroundImage(image, for: .normal)
                 card.isSelected = false
@@ -98,14 +101,65 @@ class PlayViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    // MARK: - Lotery Logic
+    
+    func checkCards(arr: [Int]) -> Bool {
+        
+        var allCardsOn = true
+        //check that all indexes in "arr"
+        for index in arr {
+            allCardsOn = allCardsOn && cardCollection[index].isSelected
+        }
+        
+        return allCardsOn
+    }
+    
+    func checkWinState(){
+        var won = false
+        switch formaGanar{
+        case "Vertical":
+            for offset in 0...3 {
+                won = won || checkCards(arr: [0+offset, 4+offset, 8+offset, 12+offset])
+            }
+        case "Horizontal":
+            for offset in [0,4,8,12] {
+                won = won || checkCards(arr: [0+offset, 1+offset, 2+offset, 3+offset])
+            }
+        case "Diagonal":
+            won = won || checkCards(arr: [0, 5, 10, 15])
+            won = won || checkCards(arr: [3, 6, 9, 12])
+        case "CuadroChico":
+            /*
+             Borrar comentarios y logica dependiendo de decision en
+                respecto a las reglas de loteria ()
+             -Nose si cuadro chico, son todos los cuadros o nms el den medio-
+            */
+            //checar cuadro chico de en-centro
+            won = won || checkCards(arr: [5, 6, 9, 10])
+            
+            //checar todos los cuadros (incluyendo el del centro)
+            for offsetVerticalAxis in [0,4,8] {
+                for offsetHorizontalAxis in 0...2 {
+                    let offset = offsetVerticalAxis + offsetHorizontalAxis
+                    won = won || checkCards(arr:[0+offset, 1+offset, 4+offset, 5+offset])
+                }
+            }
+        case "CuadroGrande":
+            won = checkCards(arr: [0, 3, 12, 15])
+        case "Lleno":
+            won = checkCards(arr: Array(0...15))
+        default:
+            print("Algo anda mal muchachos")
+        }
+        if(won){
+            performSegue(withIdentifier: "winSegue", sender: nil)
+        }
+    }
+    
+    // MARK: - Navigation
+    
+    @IBAction func goBack(_ sender: Any) {
+        view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+    }
     
 }

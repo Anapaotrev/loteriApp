@@ -19,6 +19,7 @@
 		4AA3B83E2243066D0077E1B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3B83D2243066D0077E1B6 /* ViewController.swift */; };
 		4AA3B8412243066D0077E1B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA3B83F2243066D0077E1B6 /* Main.storyboard */; };
 		4AA3B8462243066D0077E1B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA3B8442243066D0077E1B6 /* LaunchScreen.storyboard */; };
+		6FD67DC1227ADF0300F59600 /* GanasteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD67DC0227ADF0300F59600 /* GanasteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4AA3B8402243066D0077E1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AA3B8452243066D0077E1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AA3B8472243066D0077E1B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FD67DC0227ADF0300F59600 /* GanasteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GanasteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				4AA3B83D2243066D0077E1B6 /* ViewController.swift */,
 				34BD08362244057B007AB14B /* RoundButton.swift */,
 				4AA3B83F2243066D0077E1B6 /* Main.storyboard */,
+				6FD67DC0227ADF0300F59600 /* GanasteViewController.swift */,
 				34309CC0225AB68100FC46AC /* SeleccionarViewController.swift */,
 				4AA3594022486101003A2944 /* Loteria.swift */,
 				4AA3B8442243066D0077E1B6 /* LaunchScreen.storyboard */,
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD67DC1227ADF0300F59600 /* GanasteViewController.swift in Sources */,
 				4AA3594122486101003A2944 /* Loteria.swift in Sources */,
 				4A34F67A225ABF9000FB52F3 /* GiveViewController.swift in Sources */,
 				4AA3594322486338003A2944 /* PlayViewController.swift in Sources */,
