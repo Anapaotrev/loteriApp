@@ -108,7 +108,6 @@ class PlayViewController: UIViewController, UIScrollViewDelegate {
         var allCardsOn = true
         //check that all indexes in "arr"
         for index in arr {
-            print(allCardsOn && cardCollection[index].isSelected)
             allCardsOn = allCardsOn && cardCollection[index].isSelected
         }
         
@@ -153,11 +152,9 @@ class PlayViewController: UIViewController, UIScrollViewDelegate {
             print("Algo anda mal muchachos")
         }
         if(won){
-            print("ganaste ilv")
+            performSegue(withIdentifier: "winSegue", sender: nil)
         }
     }
-    
-    
     
     // MARK: - Navigation
     

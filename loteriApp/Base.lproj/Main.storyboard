@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -518,16 +518,17 @@
                         <outletCollection property="cardCollection" destination="j2Y-Lg-j4u" collectionClass="NSMutableArray" id="rPk-Fy-UrY"/>
                         <outletCollection property="cardCollection" destination="jvD-Uk-YMc" collectionClass="NSMutableArray" id="q8D-sn-LJ9"/>
                         <outletCollection property="cardCollection" destination="oc8-cA-YdH" collectionClass="NSMutableArray" id="SHP-vG-PiG"/>
+                        <segue destination="Wwo-VU-qMX" kind="presentation" identifier="winSegue" id="pSd-dx-wuP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FI6-vq-gTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1968.8" y="508.69565217391306"/>
         </scene>
-        <!--View Controller-->
+        <!--Ganaste View Controller-->
         <scene sceneID="o46-xH-sb2">
             <objects>
-                <viewController id="Wwo-VU-qMX" sceneMemberID="viewController">
+                <viewController id="Wwo-VU-qMX" customClass="GanasteViewController" customModule="loteriApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q08-Ip-0ik">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -581,6 +582,9 @@
                                         <real key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goBack:" destination="Wwo-VU-qMX" eventType="touchUpInside" id="IWc-m7-XhM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GANASTE!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQG-Jf-q6w">
                                 <rect key="frame" x="16" y="233" width="343" height="100"/>
@@ -712,7 +716,7 @@
         <image name="Diagonal" width="317" height="320"/>
         <image name="Horizontal" width="317" height="320"/>
         <image name="Lleno" width="440" height="443"/>
-        <image name="Mariachi" width="1875" height="1083"/>
+        <image name="Mariachi" width="900" height="519.84002685546875"/>
         <image name="Vertical" width="317" height="320"/>
         <image name="arbol" width="871" height="1379"/>
         <image name="bar" width="153" height="31"/>
