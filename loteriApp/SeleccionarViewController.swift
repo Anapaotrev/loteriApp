@@ -36,5 +36,12 @@ class SeleccionarViewController: UIViewController {
         vistaPlay.formaGanar = formaGanar
         vistaPlay.cardNames = cardNames
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
+    override var shouldAutorotate: Bool {
+        return false
+    }
 
 }
