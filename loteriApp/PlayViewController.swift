@@ -174,7 +174,7 @@ class PlayViewController: UIViewController, UIScrollViewDelegate, UIPopoverPrese
         case "Lleno":
             won = checkCards(arr: Array(0...15))
         default:
-            print("Algo anda mal muchachos")
+            print("Juego Libre")
         }
         if(won){
             performSegue(withIdentifier: "winSegue", sender: nil)
