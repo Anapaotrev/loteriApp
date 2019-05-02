@@ -34,9 +34,13 @@ class SeleccionarViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vistaPlay = segue.destination as! PlayViewController
-        vistaPlay.formaGanar = formaGanar
         vistaPlay.cardNames = cardNames
         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+        if segue.identifier == "play" {
+            vistaPlay.formaGanar = formaGanar
+        } else {
+            vistaPlay.formaGanar = "Libre"
+        }
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {

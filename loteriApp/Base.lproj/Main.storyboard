@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -230,7 +229,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Z2-OA-iaH" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
-                                <rect key="frame" x="132" y="460" width="116" height="37"/>
+                                <rect key="frame" x="132" y="494" width="116" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                 <color key="backgroundColor" red="0.23710581659999999" green="0.1350457072" blue="0.13199409840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="WesternNormal" family="Western" pointSize="29"/>
@@ -244,6 +243,23 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="Qrw-6F-2f3" kind="show" identifier="play" id="n6b-sK-5K4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6J-1i-CNg" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
+                                <rect key="frame" x="132" y="438" width="116" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                                <color key="backgroundColor" red="0.23710581659999999" green="0.1350457072" blue="0.13199409840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="WesternNormal" family="Western" pointSize="29"/>
+                                <state key="normal" title="LIBRE">
+                                    <color key="titleColor" red="0.83271175620000004" green="0.34053343530000002" blue="0.17708155510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Qrw-6F-2f3" kind="show" identifier="playLibre" id="P2Z-up-Efr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -322,7 +338,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scw-Bu-PES" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
-                                <rect key="frame" x="84" y="252" width="116" height="37"/>
+                                <rect key="frame" x="156" y="253" width="116" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.23710581659999999" green="0.1350457072" blue="0.13199409840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="WesternNormal" family="Western" pointSize="29"/>
@@ -336,6 +352,23 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="dismissPopOver:" destination="Hkg-Ma-CtF" eventType="touchUpInside" id="6TN-HB-6Ff"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jac-7X-wki" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
+                                <rect key="frame" x="12" y="253" width="116" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                                <color key="backgroundColor" red="0.23710581659999999" green="0.1350457072" blue="0.13199409840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="WesternNormal" family="Western" pointSize="29"/>
+                                <state key="normal" title="LIBRE">
+                                    <color key="titleColor" red="0.83271175620000004" green="0.34053343530000002" blue="0.17708155510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="seleccionarBoton:" destination="Hkg-Ma-CtF" eventType="touchUpInside" id="kk7-zP-SHG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -873,4 +906,7 @@
         <image name="bar" width="549" height="58"/>
         <image name="cactus" width="900" height="1300"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="n6b-sK-5K4"/>
+    </inferredMetricsTieBreakers>
 </document>
