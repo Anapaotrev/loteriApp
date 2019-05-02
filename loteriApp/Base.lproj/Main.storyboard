@@ -598,7 +598,7 @@
                                 </connections>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsZ-Z6-c4r" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
-                                <rect key="frame" x="230" y="97" width="129" height="35"/>
+                                <rect key="frame" x="215" y="97" width="144" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.23710581659999999" green="0.1350457072" blue="0.13199409840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="WesternNormal" family="Western" pointSize="20"/>
