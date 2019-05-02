@@ -71,6 +71,7 @@ class GiveViewController: UIViewController {
             let synthesizer = AVSpeechSynthesizer()
             synthesizer.speak(utterance)
         }
+    }
 
     func voiceCard(cardName: String) {
         let utterance = AVSpeechUtterance(string: cardName)
@@ -80,7 +81,7 @@ class GiveViewController: UIViewController {
         let synthesizer = AVSpeechSynthesizer()
         synthesizer.speak(utterance)
     }
-
+        
     @IBAction func panCard(_ sender: UIPanGestureRecognizer) {
         let card = sender.view!
         let point = sender.translation(in: view)
@@ -117,6 +118,7 @@ class GiveViewController: UIViewController {
             self.card.alpha = 1
             self.card.transform = .identity
         })
+    }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.landscape
