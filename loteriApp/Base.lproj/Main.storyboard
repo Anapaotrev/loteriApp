@@ -478,6 +478,23 @@
                                     <outlet property="delegate" destination="Qrw-6F-2f3" id="dP0-TE-w5y"/>
                                 </connections>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsZ-Z6-c4r" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
+                                <rect key="frame" x="256" y="97" width="103" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.23710581659999999" green="0.1350457072" blue="0.13199409840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="WesternNormal" family="Western" pointSize="27"/>
+                                <state key="normal" title="BORRAR">
+                                    <color key="titleColor" red="0.83271175620000004" green="0.34053343530000002" blue="0.17708155510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="eraseSelected:" destination="Qrw-6F-2f3" eventType="touchUpInside" id="7ny-0X-SPA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.87710243463516235" green="0.83093255758285522" blue="0.72751832008361816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="DL0-bl-FKa"/>
@@ -485,22 +502,22 @@
                     <connections>
                         <outlet property="cardsView" destination="Zyx-wD-38a" id="dhc-2f-BC6"/>
                         <outlet property="scrollView" destination="LyO-PC-qlg" id="9GS-SR-daq"/>
-                        <outletCollection property="cardCollection" destination="jvD-Uk-YMc" collectionClass="NSMutableArray" id="IAr-iB-MeO"/>
-                        <outletCollection property="cardCollection" destination="COU-Uy-Drb" collectionClass="NSMutableArray" id="ubN-JJ-tug"/>
-                        <outletCollection property="cardCollection" destination="yXY-Fm-2ER" collectionClass="NSMutableArray" id="h70-ZU-iDi"/>
-                        <outletCollection property="cardCollection" destination="QFL-Ck-VSQ" collectionClass="NSMutableArray" id="9jR-OX-4gS"/>
-                        <outletCollection property="cardCollection" destination="caO-nI-S4d" collectionClass="NSMutableArray" id="hdB-Eh-a0Y"/>
-                        <outletCollection property="cardCollection" destination="JAv-5z-gkI" collectionClass="NSMutableArray" id="Usw-e7-iuR"/>
-                        <outletCollection property="cardCollection" destination="Sgi-Q4-R8r" collectionClass="NSMutableArray" id="XtS-vI-9PY"/>
-                        <outletCollection property="cardCollection" destination="uRM-iw-a3m" collectionClass="NSMutableArray" id="YRf-RN-pPC"/>
-                        <outletCollection property="cardCollection" destination="Vg6-xX-sGm" collectionClass="NSMutableArray" id="hVu-bg-X5N"/>
-                        <outletCollection property="cardCollection" destination="j2Y-Lg-j4u" collectionClass="NSMutableArray" id="VED-AJ-Ehw"/>
-                        <outletCollection property="cardCollection" destination="M6m-Oo-hDO" collectionClass="NSMutableArray" id="vwt-0u-YIa"/>
-                        <outletCollection property="cardCollection" destination="8hx-iT-Tsz" collectionClass="NSMutableArray" id="OKa-0E-gfg"/>
-                        <outletCollection property="cardCollection" destination="bYG-Wc-2f5" collectionClass="NSMutableArray" id="UiE-ig-sVL"/>
-                        <outletCollection property="cardCollection" destination="Gg5-Xm-Ccc" collectionClass="NSMutableArray" id="bfB-PV-Tw1"/>
-                        <outletCollection property="cardCollection" destination="oc8-cA-YdH" collectionClass="NSMutableArray" id="zUG-8X-OJA"/>
-                        <outletCollection property="cardCollection" destination="yyk-LG-MRg" collectionClass="NSMutableArray" id="dAA-as-t6W"/>
+                        <outletCollection property="cardCollection" destination="QFL-Ck-VSQ" collectionClass="NSMutableArray" id="Q7q-Al-H8n"/>
+                        <outletCollection property="cardCollection" destination="8hx-iT-Tsz" collectionClass="NSMutableArray" id="aJ9-9X-KRy"/>
+                        <outletCollection property="cardCollection" destination="Gg5-Xm-Ccc" collectionClass="NSMutableArray" id="5jP-ET-Lsm"/>
+                        <outletCollection property="cardCollection" destination="bYG-Wc-2f5" collectionClass="NSMutableArray" id="UI5-nr-F2b"/>
+                        <outletCollection property="cardCollection" destination="uRM-iw-a3m" collectionClass="NSMutableArray" id="ABS-hj-vjx"/>
+                        <outletCollection property="cardCollection" destination="Vg6-xX-sGm" collectionClass="NSMutableArray" id="RWR-Dl-G8d"/>
+                        <outletCollection property="cardCollection" destination="caO-nI-S4d" collectionClass="NSMutableArray" id="ojx-QG-Wvw"/>
+                        <outletCollection property="cardCollection" destination="yyk-LG-MRg" collectionClass="NSMutableArray" id="pyB-PC-7ce"/>
+                        <outletCollection property="cardCollection" destination="M6m-Oo-hDO" collectionClass="NSMutableArray" id="Wdt-Wd-sab"/>
+                        <outletCollection property="cardCollection" destination="JAv-5z-gkI" collectionClass="NSMutableArray" id="YWS-Oc-5dm"/>
+                        <outletCollection property="cardCollection" destination="Sgi-Q4-R8r" collectionClass="NSMutableArray" id="RqH-Id-GgR"/>
+                        <outletCollection property="cardCollection" destination="COU-Uy-Drb" collectionClass="NSMutableArray" id="JQG-TD-Ahk"/>
+                        <outletCollection property="cardCollection" destination="yXY-Fm-2ER" collectionClass="NSMutableArray" id="St8-lL-rof"/>
+                        <outletCollection property="cardCollection" destination="j2Y-Lg-j4u" collectionClass="NSMutableArray" id="rPk-Fy-UrY"/>
+                        <outletCollection property="cardCollection" destination="jvD-Uk-YMc" collectionClass="NSMutableArray" id="q8D-sn-LJ9"/>
+                        <outletCollection property="cardCollection" destination="oc8-cA-YdH" collectionClass="NSMutableArray" id="SHP-vG-PiG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FI6-vq-gTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
