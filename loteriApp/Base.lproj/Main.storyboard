@@ -241,6 +241,99 @@
             </objects>
             <point key="canvasLocation" x="1053.5999999999999" y="508.69565217391306"/>
         </scene>
+        <!--Pop Over View Controller-->
+        <scene sceneID="I60-aA-r8o">
+            <objects>
+                <viewController id="Hkg-Ma-CtF" customClass="PopOverViewController" customModule="loteriApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ijT-9v-CFw">
+                        <rect key="frame" x="0.0" y="0.0" width="285" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAt-4A-zbA">
+                                <rect key="frame" x="12" y="20" width="80" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Horizontal" image="Horizontal"/>
+                                <connections>
+                                    <action selector="seleccionarBoton:" destination="Hkg-Ma-CtF" eventType="touchUpInside" id="H1b-DE-dQ3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h22-J3-6ag">
+                                <rect key="frame" x="192" y="20" width="80" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Diagonal" image="Diagonal"/>
+                                <connections>
+                                    <action selector="seleccionarBoton:" destination="Hkg-Ma-CtF" eventType="touchUpInside" id="WzQ-5z-VdK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMC-2d-nLf">
+                                <rect key="frame" x="12" y="138" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CuadroChico" image="CuadroChico"/>
+                                <connections>
+                                    <action selector="seleccionarBoton:" destination="Hkg-Ma-CtF" eventType="touchUpInside" id="dm2-da-yMb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6d-rn-if1">
+                                <rect key="frame" x="102" y="138" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CuadroGrande" image="CuadroGrande"/>
+                                <connections>
+                                    <action selector="seleccionarBoton:" destination="Hkg-Ma-CtF" eventType="touchUpInside" id="nYw-jv-gMo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syB-yN-la3">
+                                <rect key="frame" x="192" y="138" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lleno" image="Lleno"/>
+                                <connections>
+                                    <action selector="seleccionarBoton:" destination="Hkg-Ma-CtF" eventType="touchUpInside" id="yqE-a6-MXU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ju-jp-kqI">
+                                <rect key="frame" x="102" y="20" width="80" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="1"/>
+                                <state key="normal" title="Vertical" backgroundImage="Vertical"/>
+                                <connections>
+                                    <action selector="seleccionarBoton:" destination="Hkg-Ma-CtF" eventType="touchUpInside" id="Vli-fD-8tQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scw-Bu-PES" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
+                                <rect key="frame" x="84" y="252" width="116" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.23710581659999999" green="0.1350457072" blue="0.13199409840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="WesternNormal" family="Western" pointSize="29"/>
+                                <state key="normal" title="LISTO">
+                                    <color key="titleColor" red="0.83271175620000004" green="0.34053343530000002" blue="0.17708155510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dismissPopOver:" destination="Hkg-Ma-CtF" eventType="touchUpInside" id="6TN-HB-6Ff"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87710243460000004" green="0.83093255759999995" blue="0.72751832009999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="nUW-Ma-vRP"/>
+                    </view>
+                    <size key="freeformSize" width="285" height="300"/>
+                    <connections>
+                        <outlet property="btnListo" destination="scw-Bu-PES" id="D1e-5O-SFf"/>
+                        <outletCollection property="botonesCollection" destination="4Ju-jp-kqI" collectionClass="NSMutableArray" id="3KY-4m-big"/>
+                        <outletCollection property="botonesCollection" destination="ZAt-4A-zbA" collectionClass="NSMutableArray" id="AXf-he-kl5"/>
+                        <outletCollection property="botonesCollection" destination="h22-J3-6ag" collectionClass="NSMutableArray" id="AZS-Vx-tJy"/>
+                        <outletCollection property="botonesCollection" destination="TMC-2d-nLf" collectionClass="NSMutableArray" id="VhE-XT-SkW"/>
+                        <outletCollection property="botonesCollection" destination="v6d-rn-if1" collectionClass="NSMutableArray" id="Ryl-lS-Ina"/>
+                        <outletCollection property="botonesCollection" destination="syB-yN-la3" collectionClass="NSMutableArray" id="qRr-Bt-rge"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIJ-ku-hX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2909.5999999999999" y="186.20689655172416"/>
+        </scene>
         <!--Play View Controller-->
         <scene sceneID="F3u-oX-Ep8">
             <objects>
@@ -479,11 +572,11 @@
                                 </connections>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsZ-Z6-c4r" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
-                                <rect key="frame" x="256" y="97" width="103" height="35"/>
+                                <rect key="frame" x="219" y="97" width="140" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.23710581659999999" green="0.1350457072" blue="0.13199409840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="WesternNormal" family="Western" pointSize="27"/>
-                                <state key="normal" title="BORRAR">
+                                <fontDescription key="fontDescription" name="WesternNormal" family="Western" pointSize="20"/>
+                                <state key="normal" title="MISMA TABLA">
                                     <color key="titleColor" red="0.83271175620000004" green="0.34053343530000002" blue="0.17708155510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -493,6 +586,9 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="eraseSelected:" destination="Qrw-6F-2f3" eventType="touchUpInside" id="7ny-0X-SPA"/>
+                                    <segue destination="Hkg-Ma-CtF" kind="popoverPresentation" identifier="popOver" popoverAnchorView="KsZ-Z6-c4r" id="P1v-XI-btc">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
@@ -608,7 +704,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="paM-Os-jwz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2900" y="509"/>
+            <point key="canvasLocation" x="2900" y="795"/>
         </scene>
         <!--Give View Controller-->
         <scene sceneID="0y9-Ps-b8T">

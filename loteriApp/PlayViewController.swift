@@ -9,7 +9,7 @@
 
 import UIKit
 
-class PlayViewController: UIViewController, UIScrollViewDelegate {
+class PlayViewController: UIViewController, UIScrollViewDelegate, UIPopoverPresentationControllerDelegate {
 
     @IBOutlet var cardCollection: [UIButton]!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -54,7 +54,6 @@ class PlayViewController: UIViewController, UIScrollViewDelegate {
                     let image = UIImage(named: dict.value(forKey: "image") as! String)
                     card.setBackgroundImage(image, for: .normal)
                     card.setTitle(String(number), for: .normal)
-                    print(card.tag)
                 } else{
                     number = Int(arc4random_uniform(54))
                 }
@@ -80,13 +79,25 @@ class PlayViewController: UIViewController, UIScrollViewDelegate {
             sender.isSelected = true
         }
         sender.setBackgroundImage(image, for: .normal)
+        print(formaGanar)
     }
     
     @IBAction func goBack(_ sender: Any) {
         view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
-    // Des Select all of the cards
+    // MARK: - POP over
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let popver = segue.destination as! PopOverViewController
+        popver.popoverPresentationController!.delegate = self
+    }
+    
+    // reusar la misma tabla
     @IBAction func eraseSelected(_ sender: Any) {
         for card in cardCollection {
             if card.isSelected {
@@ -96,6 +107,10 @@ class PlayViewController: UIViewController, UIScrollViewDelegate {
                 card.isSelected = false
             }
         }
+    }
+    
+    func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool {
+        return false
     }
     
     /*

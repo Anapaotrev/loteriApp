@@ -21,9 +21,10 @@ class GiveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         shuffledCards = cards.shuffled() as NSArray// shuffle deck
-        
+//        shuffledCards = cards
         dict = shuffledCards[0] as? NSDictionary
         cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
+        voiceCard(cardName: dict.value(forKey: "name") as! String)
         counter = 0 // card counter
     }
 
@@ -41,15 +42,18 @@ class GiveViewController: UIViewController {
         if counter < 54 {
             dict = shuffledCards[counter] as? NSDictionary
             cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
-            let utterance = AVSpeechUtterance(string: dict.value(forKey: "name") as! String)
-            utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
-            utterance.rate = 0.5
-            
-            let synthesizer = AVSpeechSynthesizer()
-            synthesizer.speak(utterance)
+            voiceCard(cardName: dict.value(forKey: "name") as! String)
         }
     }
     
+    func voiceCard(cardName: String) {
+        let utterance = AVSpeechUtterance(string: cardName)
+        utterance.voice = AVSpeechSynthesisVoice(language: "es-MX")
+        utterance.rate = 0.5
+        
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+    }
     
     /*
     // MARK: - Navigation
