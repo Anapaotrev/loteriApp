@@ -26,11 +26,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pq-CX-iG1">
                                 <rect key="frame" x="0.0" y="0.0" width="381" height="172"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="W3j-gA-TRX">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="W3j-gA-TRX">
                                         <rect key="frame" x="0.0" y="0.0" width="381" height="37"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="187" id="ieQ-3F-KUL"/>
-                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F7d-mj-FjW">
                                         <rect key="frame" x="-8" y="135" width="389" height="20"/>
@@ -46,17 +44,14 @@
                                     <constraint firstItem="F7d-mj-FjW" firstAttribute="leading" secondItem="7pq-CX-iG1" secondAttribute="leading" constant="-8" id="11G-tk-1rJ"/>
                                     <constraint firstAttribute="trailing" secondItem="F7d-mj-FjW" secondAttribute="trailing" id="FEp-3A-d1f"/>
                                     <constraint firstAttribute="bottom" secondItem="F7d-mj-FjW" secondAttribute="bottom" constant="17" id="ndB-2o-jT5"/>
-                                    <constraint firstItem="W3j-gA-TRX" firstAttribute="leading" secondItem="7pq-CX-iG1" secondAttribute="leading" id="v4k-1h-Sg6"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9J-83-9G9">
                                 <rect key="frame" x="0.0" y="495" width="375" height="172"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="tS1-1S-36P">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bar" translatesAutoresizingMaskIntoConstraints="NO" id="tS1-1S-36P">
                                         <rect key="frame" x="0.0" y="135" width="375" height="38"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="187" id="4xw-MQ-Py1"/>
-                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZB-t0-58W">
                                         <rect key="frame" x="-4" y="17" width="389" height="20"/>
@@ -68,9 +63,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.91050726175308228" green="0.6306227445602417" blue="0.18862199783325195" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="tS1-1S-36P" secondAttribute="bottom" id="5BT-oF-mDZ"/>
                                     <constraint firstItem="hZB-t0-58W" firstAttribute="leading" secondItem="P9J-83-9G9" secondAttribute="leading" id="88e-GW-UMD"/>
-                                    <constraint firstItem="tS1-1S-36P" firstAttribute="leading" secondItem="P9J-83-9G9" secondAttribute="leading" id="DEx-fx-1sJ"/>
                                     <constraint firstAttribute="width" secondItem="P9J-83-9G9" secondAttribute="height" multiplier="375:172" id="IVk-2t-oRq"/>
                                     <constraint firstAttribute="trailing" secondItem="hZB-t0-58W" secondAttribute="trailing" id="Zd0-T7-mjV"/>
                                     <constraint firstItem="hZB-t0-58W" firstAttribute="top" secondItem="P9J-83-9G9" secondAttribute="top" constant="17" id="fG9-jB-EMF"/>
