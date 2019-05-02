@@ -189,7 +189,12 @@ class PlayViewController: UIViewController, UIScrollViewDelegate, UIPopoverPrese
     @IBAction func unwindWinner(segue:UIStoryboardSegue) {
         btnMismaTabla.sendActions(for: .touchUpInside)
     }
-//    let vista = presentingViewController as! PlayViewController
-//    vista.btnMismaTabla.sendActions(for: .touchUpInside)
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
+    override var shouldAutorotate: Bool {
+        return false
+    }
     
 }
