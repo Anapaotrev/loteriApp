@@ -79,7 +79,6 @@ class PlayViewController: UIViewController, UIScrollViewDelegate, UIPopoverPrese
             sender.isSelected = true
         }
         sender.setBackgroundImage(image, for: .normal)
-        print(formaGanar)
     }
     
     @IBAction func goBack(_ sender: Any) {
