@@ -8,6 +8,7 @@
 */
 
 import UIKit
+import AudioToolbox
 
 class PlayViewController: UIViewController, UIScrollViewDelegate, UIPopoverPresentationControllerDelegate {
     
@@ -177,6 +178,7 @@ class PlayViewController: UIViewController, UIScrollViewDelegate, UIPopoverPrese
         }
         if(won){
             performSegue(withIdentifier: "winSegue", sender: nil)
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
         }
     }
     

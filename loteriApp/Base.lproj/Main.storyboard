@@ -252,7 +252,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCi-0z-dQ9">
                                 <rect key="frame" x="140" y="290" width="100" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Esquinas" image="Esquinas"/>
+                                <state key="normal" title="CuadroGrande" image="CuadroGrande"/>
                                 <connections>
                                     <action selector="seleccionarBoton:" destination="JBn-9b-edw" eventType="touchUpInside" id="V7e-w2-PO1"/>
                                 </connections>
@@ -912,10 +912,9 @@
     </scenes>
     <resources>
         <image name="CuadroChico" width="317" height="320"/>
-        <image name="CuadroGrande" width="317" height="320"/>
+        <image name="CuadroGrande" width="569" height="569"/>
         <image name="Decorations" width="709" height="174"/>
         <image name="Diagonal" width="317" height="320"/>
-        <image name="Esquinas" width="569" height="569"/>
         <image name="Horizontal" width="317" height="320"/>
         <image name="Lleno" width="440" height="443"/>
         <image name="Mariachi" width="1875" height="1083"/>
