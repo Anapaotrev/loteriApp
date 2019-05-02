@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setStoryboard()
         return true
     }
 
@@ -42,6 +43,55 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func setStoryboard() {
+        let storyboard : UIStoryboard = grabStoryboard()
+        setInitialScreen(storyboard)
+    }
+    
+    func setInitialScreen(_ storyboard : UIStoryboard) {
+        
+        var initViewController : UIViewController
+        initViewController = storyboard.instantiateViewController(withIdentifier: "main")
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = initViewController
+        window?.makeKeyAndVisible()
+    }
+    
+    func grabStoryboard() -> UIStoryboard {
+        let screenHeight = Int(UIScreen.main.bounds.size.height)
+        print(screenHeight)
+        
+        var storyboard : UIStoryboard
+        
+        switch (screenHeight) {
+        case 480:
+            storyboard = UIStoryboard(name: "ipad", bundle: nil)
+            break;
+        case 568:
+            storyboard = UIStoryboard(name: "Main", bundle: nil)
+            break;
+        case 667:
+            storyboard = UIStoryboard(name: "Main", bundle: nil)
+            break;
+        case 736:
+            storyboard = UIStoryboard(name: "Main", bundle: nil)
+            break;
+        case 1024:
+            storyboard = UIStoryboard(name: "ipad", bundle: nil)
+            break;
+        case 1112:
+            storyboard = UIStoryboard(name: "ipad", bundle: nil)
+            break;
+        case 1366:
+            storyboard = UIStoryboard(name: "ipad", bundle: nil)
+            break;
+            
+        default:
+            storyboard = UIStoryboard(name: "Main", bundle: nil)
+        }
+        return storyboard
+    }
 
 }
 

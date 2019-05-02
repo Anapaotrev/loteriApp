@@ -14,6 +14,7 @@
 		4A34F677225AAAF900FB52F3 /* LoteriaCards.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A34F676225AAAF900FB52F3 /* LoteriaCards.plist */; };
 		4A34F67A225ABF9000FB52F3 /* GiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A34F679225ABF9000FB52F3 /* GiveViewController.swift */; };
 		4A9DC49A227AA9B200519F7E /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9DC499227AA9B200519F7E /* PopOverViewController.swift */; };
+		4A9DC49D227B857200519F7E /* ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9DC49B227B857100519F7E /* ipad.storyboard */; };
 		4AA3594122486101003A2944 /* Loteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3594022486101003A2944 /* Loteria.swift */; };
 		4AA3594322486338003A2944 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3594222486338003A2944 /* PlayViewController.swift */; };
 		4AA3B83C2243066D0077E1B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA3B83B2243066D0077E1B6 /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 		4A34F678225AB76400FB52F3 /* western.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = western.TTF; sourceTree = "<group>"; };
 		4A34F679225ABF9000FB52F3 /* GiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveViewController.swift; sourceTree = "<group>"; };
 		4A9DC499227AA9B200519F7E /* PopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
+		4A9DC49C227B857100519F7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ipad.storyboard; sourceTree = "<group>"; };
 		4AA3594022486101003A2944 /* Loteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loteria.swift; sourceTree = "<group>"; };
 		4AA3594222486338003A2944 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		4AA3B8382243066D0077E1B6 /* loteriApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loteriApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 		4AA3B83A2243066D0077E1B6 /* loteriApp */ = {
 			isa = PBXGroup;
 			children = (
+				4A9DC49B227B857100519F7E /* ipad.storyboard */,
 				4AA3B83B2243066D0077E1B6 /* AppDelegate.swift */,
 				4AA3B83D2243066D0077E1B6 /* ViewController.swift */,
 				34BD08362244057B007AB14B /* RoundButton.swift */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AA3B8462243066D0077E1B6 /* LaunchScreen.storyboard in Resources */,
+				4A9DC49D227B857200519F7E /* ipad.storyboard in Resources */,
 				4A34F677225AAAF900FB52F3 /* LoteriaCards.plist in Resources */,
 				34BD08332243F6C3007AB14B /* Assets.xcassets in Resources */,
 				4AA3B8412243066D0077E1B6 /* Main.storyboard in Resources */,
@@ -180,6 +184,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4A9DC49B227B857100519F7E /* ipad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A9DC49C227B857100519F7E /* Base */,
+			);
+			name = ipad.storyboard;
+			sourceTree = "<group>";
+		};
 		4AA3B83F2243066D0077E1B6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -317,7 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = loteriApp.tec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = loteriApp.tec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
