@@ -35,6 +35,10 @@ class PopOverViewController: UIViewController {
     @IBAction func seleccionarBoton(_ sender: UIButton) {
         btnListo.isEnabled = true
         formaDeGanar = sender.currentTitle
+        if sender.titleLabel?.text == "LIBRE" {
+            formaDeGanar = "Libre"
+            self.dismiss(animated: true, completion: nil)
+        }
         for index in 0 ..< botonesCollection.count {
             botonesCollection[index].setImage(UIImage(named: botonesCollection[index].currentTitle!), for: .normal)
         }

@@ -274,6 +274,23 @@
                                     <action selector="seleccionarBoton:" destination="JBn-9b-edw" eventType="touchUpInside" id="tXR-wk-0gy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFK-FG-Q3r" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
+                                <rect key="frame" x="132" y="443" width="116" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.23710581659999999" green="0.1350457072" blue="0.13199409840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="WesternNormal" family="Western" pointSize="29"/>
+                                <state key="normal" title="LIBRE">
+                                    <color key="titleColor" red="0.83271175620000004" green="0.34053343530000002" blue="0.17708155510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Qrw-6F-2f3" kind="show" identifier="playLibre" id="JUp-8M-ke1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.86131536960601807" green="0.81547236442565918" blue="0.71560174226760864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Bu7-VA-hS9"/>
@@ -349,8 +366,25 @@
                                     <action selector="seleccionarBoton:" destination="Hkg-Ma-CtF" eventType="touchUpInside" id="Vli-fD-8tQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knV-1A-KPg" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
+                                <rect key="frame" x="12" y="251" width="116" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.23710581659999999" green="0.1350457072" blue="0.13199409840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="WesternNormal" family="Western" pointSize="29"/>
+                                <state key="normal" title="LIBRE">
+                                    <color key="titleColor" red="0.83271175620000004" green="0.34053343530000002" blue="0.17708155510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="seleccionarBoton:" destination="Hkg-Ma-CtF" eventType="touchUpInside" id="UtZ-qA-H4L"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scw-Bu-PES" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
-                                <rect key="frame" x="84" y="252" width="116" height="37"/>
+                                <rect key="frame" x="156" y="251" width="116" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.23710581659999999" green="0.1350457072" blue="0.13199409840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="WesternNormal" family="Western" pointSize="29"/>
@@ -923,4 +957,7 @@
         <image name="bar" width="153" height="31"/>
         <image name="cactus" width="900" height="1300"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="JUp-8M-ke1"/>
+    </inferredMetricsTieBreakers>
 </document>
