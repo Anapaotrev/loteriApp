@@ -18,8 +18,6 @@ class GiveViewController: UIViewController {
     var counter : Int!
     @IBOutlet weak var cardImage: UIImageView!
     @IBOutlet weak var card: UIView!
-    @IBOutlet weak var cardImage2: UIImageView!
-    @IBOutlet weak var card2: UIView!
     
     var divisor : CGFloat!
     
@@ -29,9 +27,7 @@ class GiveViewController: UIViewController {
         
         dict = shuffledCards[0] as? NSDictionary
         cardImage.image = UIImage(named: dict.value(forKey: "image") as! String)
-        
-        dict = shuffledCards[1] as? NSDictionary
-        cardImage2.image = UIImage(named: dict.value(forKey: "image") as! String)
+
         counter = 0 // card counter
         
         divisor = (view.frame.width / 2) / 0.61
@@ -92,18 +88,20 @@ class GiveViewController: UIViewController {
         
         if sender.state == UIGestureRecognizerState.ended {
             if card.center.x < 75 {
-                UIView.animate(withDuration: 0.3, animations: {
+                /*UIView.animate(withDuration: 0.3, animations: {
                     card.center = CGPoint(x: card.center.x - 200, y: card.center.y + 75)
                     card.alpha = 0
-                })
-                //nextCards(next: false)
+                })*/
+                nextCards(next: false)
+                resetCard()
                 return
             } else if card.center.x > (view.frame.width - 75) {
-                UIView.animate(withDuration: 0.3, animations: {
+                /*UIView.animate(withDuration: 0.3, animations: {
                     card.center = CGPoint(x: card.center.x + 200, y: card.center.y + 75)
                     card.alpha = 0
-                })
-                //nextCards(next: true)
+                })*/
+                nextCards(next: true)
+                resetCard()
                 return
             }
             resetCard()

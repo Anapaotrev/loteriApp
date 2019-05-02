@@ -199,7 +199,7 @@
                                 <color key="backgroundColor" red="0.85424071550369263" green="0.59114807844161987" blue="0.17440196871757507" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omQ-WC-3j7">
-                                <rect key="frame" x="-6" y="577" width="389" height="20"/>
+                                <rect key="frame" x="-6" y="586" width="389" height="11"/>
                                 <color key="backgroundColor" red="0.85424071550369263" green="0.59114807844161987" blue="0.17440196871757507" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mku-61-AKJ">
@@ -207,7 +207,7 @@
                                 <color key="backgroundColor" red="0.85424071550369263" green="0.59114807844161987" blue="0.17440196871757507" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Z2-OA-iaH" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
-                                <rect key="frame" x="132" y="495" width="116" height="37"/>
+                                <rect key="frame" x="132" y="495" width="116" height="46"/>
                                 <color key="backgroundColor" red="0.23710581659999999" green="0.1350457072" blue="0.13199409840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="WesternNormal" family="Western" pointSize="29"/>
                                 <state key="normal" title="JUGAR">
@@ -248,7 +248,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCi-0z-dQ9">
                                 <rect key="frame" x="140" y="290" width="100" height="123"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Esquinas" image="Esquinas"/>
                                 <connections>
                                     <action selector="seleccionarBoton:" destination="JBn-9b-edw" eventType="touchUpInside" id="V7e-w2-PO1"/>
@@ -385,7 +384,7 @@
                                 <color key="backgroundColor" red="0.83173418045043945" green="0.57535821199417114" blue="0.16871395707130432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QtQ-TJ-bsd">
-                                <rect key="frame" x="-8" y="586" width="389" height="11"/>
+                                <rect key="frame" x="-8" y="577" width="389" height="20"/>
                                 <color key="backgroundColor" red="0.83173418045043945" green="0.57535821199417114" blue="0.16871395707130432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoq-kL-uJc">
@@ -555,7 +554,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZY-SN-5sE" customClass="RoundButton" customModule="loteriApp" customModuleProvider="target">
-                                <rect key="frame" x="16" y="97" width="103" height="44"/>
+                                <rect key="frame" x="16" y="97" width="103" height="35"/>
                                 <color key="backgroundColor" red="0.23710581659999999" green="0.1350457072" blue="0.13199409840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="WesternNormal" family="Western" pointSize="27"/>
                                 <state key="normal" title="ATRAS">
@@ -933,7 +932,7 @@
                                 <rect key="frame" x="67" y="163" width="241" height="330"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyt-IF-HMH">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyt-IF-HMH">
                                         <rect key="frame" x="0.0" y="0.0" width="241" height="330"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
@@ -941,22 +940,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="N2Z-GI-Hfu" appends="YES" id="cje-h5-Ehd"/>
-                                </connections>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Zq-2v-4s9" userLabel="Card2">
-                                <rect key="frame" x="67" y="163" width="241" height="330"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9I-Di-nfD" userLabel="Card Image2">
-                                        <rect key="frame" x="0.0" y="0.0" width="241" height="330"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Jxh-Rf-AKD" appends="YES" id="tYB-DS-OJU"/>
+                                    <outletCollection property="gestureRecognizers" destination="Jxh-Rf-AKD" appends="YES" id="lwK-47-q62"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -965,9 +949,7 @@
                     </view>
                     <connections>
                         <outlet property="card" destination="HCh-OE-cdo" id="2Ho-S2-Tqs"/>
-                        <outlet property="card2" destination="4Zq-2v-4s9" id="LKr-zb-sJn"/>
                         <outlet property="cardImage" destination="hyt-IF-HMH" id="5KG-FN-nCe"/>
-                        <outlet property="cardImage2" destination="Z9I-Di-nfD" id="x3R-wS-Izj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L69-y3-KIF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -976,16 +958,15 @@
                         <action selector="panCard:" destination="DyL-wY-f2L" id="itI-Qz-oDB"/>
                     </connections>
                 </panGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="N2Z-GI-Hfu"/>
             </objects>
             <point key="canvasLocation" x="1053.5999999999999" y="-199.25037481259372"/>
         </scene>
     </scenes>
     <resources>
         <image name="CuadroChico" width="317" height="320"/>
-        <image name="CuadroGrande" width="317" height="320"/>
         <image name="Decorations" width="709" height="174"/>
         <image name="Diagonal" width="317" height="320"/>
+        <image name="Esquinas" width="16" height="16"/>
         <image name="Horizontal" width="317" height="320"/>
         <image name="Lleno" width="440" height="443"/>
         <image name="Mariachi" width="1875" height="1083"/>
