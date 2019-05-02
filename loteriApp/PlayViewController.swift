@@ -15,6 +15,7 @@ class PlayViewController: UIViewController, UIScrollViewDelegate, UIPopoverPrese
     @IBOutlet var cardCollection: [UIButton]!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var cardsView: UIView!
+    @IBOutlet weak var btnMismaTabla: RoundButton!
     
     var cardNames: NSArray!
     var formaGanar: String!
@@ -94,8 +95,10 @@ class PlayViewController: UIViewController, UIScrollViewDelegate, UIPopoverPrese
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let popver = segue.destination as! PopOverViewController
-        popver.popoverPresentationController!.delegate = self
+        if segue.identifier == "popOver" {
+            let popver = segue.destination as! PopOverViewController
+            popver.popoverPresentationController!.delegate = self
+        }
     }
     
     // reusar la misma tabla
@@ -182,5 +185,11 @@ class PlayViewController: UIViewController, UIScrollViewDelegate, UIPopoverPrese
     @IBAction func goBack(_ sender: Any) {
         view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func unwindWinner(segue:UIStoryboardSegue) {
+        btnMismaTabla.sendActions(for: .touchUpInside)
+    }
+//    let vista = presentingViewController as! PlayViewController
+//    vista.btnMismaTabla.sendActions(for: .touchUpInside)
     
 }
