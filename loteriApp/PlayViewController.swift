@@ -80,10 +80,12 @@ class PlayViewController: UIViewController, UIScrollViewDelegate, UIPopoverPrese
             // set deselected
             image = UIImage(named: dict.value(forKey: "image") as! String)
             sender.isSelected = false
+            sender.alpha = CGFloat(1)
         } else {
             // set selected
             image = UIImage(named: dict.value(forKey: "bw") as! String)
             sender.isSelected = true
+            sender.alpha = CGFloat(0.8)
         }
         sender.setBackgroundImage(image, for: .normal)
         checkWinState()
